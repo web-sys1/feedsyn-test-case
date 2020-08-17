@@ -38,6 +38,7 @@ jobs:
     - name: Process Data
       run: |
         python process.py
+        nfsyndication-releasecss
         
     - name: Commit files
       run: |
