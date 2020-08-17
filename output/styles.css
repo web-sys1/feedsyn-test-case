@@ -1,1 +1,269 @@
-
+/* begin */
+body {
+    font: 12pt Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+    /* font: serif */
+    color: green !important;
+    /* body-gray */
+    margin: 1em
+    }
+a {
+    color: green !important;
+    margin: 1em
+    }
+a:hover {
+    text-decoration: none;
+    margin: 1em
+    }
+a:visited {
+    color: green !important;
+    margin: 1em
+    }
+hr {
+    background-color: #eee;
+    height: 1px;
+    border: none;
+    margin: 1em
+    }
+hr.between_posts {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin: 1em
+    }
+body {
+    margin: 1em;
+    padding: 0
+    }
+#header_text {
+    padding: 1px 20px 0 20px;
+    color: green !important;
+    margin: 1em
+    }
+#header_text a {
+    color: green !important;
+    text-decoration: none;
+    margin: 1em
+    }
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin: 1em
+    }
+code {
+    margin: 1em;
+    padding: 2px
+    }
+code, pre {
+    font-family: Menlo, monospace;
+    /* font: mono */
+    background-color: #eee;
+    /* light-gray */
+    font-size: 0.9em;
+    /* subfont-size */
+    margin: 1em
+    }
+/**
+ * The overflow-x line ensures that extra text only appears within the
+ * confines of the gray background, and doesn't spill out onto the page.
+ * Effectively the <pre> becomes a 'window' into the code beneath.
+ */
+pre {
+    padding: 10px;
+    line-height: 1.35em;
+    overflow-x: auto;
+    margin: 1em
+    }
+/*------------------------------------*  # Footnotes
+\*------------------------------------*/
+/**
+ * The padding-tops adds a little extra space between the bottom of an article
+ * and the start of the footnote section.
+ */
+.footnote {
+    font-size: 0.9em;
+    /* subfont-size */
+    margin: 1em
+    }
+/**
+ * These rules help the positioning of the footnote markers, although I'm not
+ * entirely sure how they work.
+ */
+sup, sub {
+    vertical-align: 0;
+    position: relative;
+    margin: 1em
+    }
+sup {
+    bottom: 1ex;
+    margin: 1em
+    }
+sub {
+    top: 0.8ex;
+    margin: 1em
+    }
+/*------------------------------------*  # Article titles
+\*------------------------------------*/
+.article_title a, .permalink a, .continue_reading {
+    color: green !important;
+    margin: 1em
+    }
+.fullpost_title a {
+    text-decoration: none;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 1em
+    }
+/**
+ * The article_meta class covers permalinks and posting dates
+ */
+.article_meta {
+    font-size: 0.9em;
+    /* subfont-size */
+    color: green !important;
+    /* accent-gray */
+    margin: 1em
+    }
+.linkpost_arrow {
+    color: green !important;
+    /* accent-gray */
+    margin: 1em
+    }
+.permalink a {
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 1em
+    }
+/**
+ * Adjust the spacing around titles to make them look nice
+ */
+.linkpost_title {
+    margin-bottom: -0.5em;
+    margin: 1em
+    }
+.fullpost_title {
+    margin-bottom: -0.3em;
+    margin: 1em
+    }
+/*------------------------------------*  # Blockquotes
+\*------------------------------------*/
+blockquote {
+    border-left: 5px solid #ccc;
+    /* primary-red */
+    margin-left: 15px;
+    margin-right: 0;
+    padding: 1px 15px;
+    color: green !important;
+    /* blockquote-gray */
+    font-style: italic;
+    margin: 1em
+    }
+blockquote p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 1em
+    }
+/*------------------------------------*  # Tweets
+\*------------------------------------*/
+/**
+ * I think Dr. Drang wrote this originally?  Whatever, I have it
+ * inlined so that all my CSS comes down in a single file.
+ */
+.bbpBox {
+    width: 80%;
+    background: #8ec2da;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1.1em;
+    /*  margin: 1em 0em 1.1em 0em;*/
+    font-family: Georgia !important;
+    margin: 1em
+    }
+.bbpBox blockquote {
+    background-color: white;
+    margin: 1em;
+    padding: 0.75em 0.75em 0.5em 0.75em !important;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-left-style: none !important;
+    font-style: normal !important;
+    line-height: 1.5em;
+    color: green !important
+    }
+.bbpBox blockquote a {
+    color: green !important;
+    text-decoration: none;
+    margin: 1em
+    }
+.bbpBox blockquote a:hover {
+    text-decoration: underline;
+    margin: 1em
+    }
+.bbpBox blockquote .twMeta {
+    font-size: 80%;
+    margin: 1em
+    }
+.bbpBox blockquote .twContent {
+    margin-bottom: 25em;
+    margin: 1em
+    }
+body {
+    background-color: #140623;
+    max-width: 750px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    margin: 1em
+    }
+h1 {
+    font-size: 2.5em;
+    margin: 1em
+    }
+.rss {
+    list-style-type: none;
+    margin: 1em;
+    padding: 0.5em 1em 1em 1.5em;
+    background-color: white;
+    margin-bottom: 2em
+    }
+.rss li {
+    margin-left: -0.5em;
+    line-height: 1.4;
+    margin: 1em
+    }
+.rss li pre {
+    overflow: auto;
+    margin: 1em
+    }
+img, figure, iframe {
+    max-width: 700px;
+    height: auto !important;
+    margin: 1em
+    }
+@media screen and (max-width: 700px) {
+    img, figure, iframe {
+        max-width: 100% !important
+        }
+    }
+.footnotes {
+    font-size: 0.85em;
+    margin: 1em
+    }
+a code {
+    text-decoration: none !important;
+    margin: 1em
+    }
+footer {
+    color: green !important;
+    text-align: center;
+    margin-bottom: 2.2em;
+    font-size: 0.85em;
+    margin: 1em
+    }
+footer a {
+    color: green !important;
+    margin: 1em
+    }
+/* end */
