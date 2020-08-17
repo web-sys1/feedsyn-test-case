@@ -1,4 +1,4 @@
 from NFSyndication.config import *
 
-init()
+#init()
 hold_stylesheet()
