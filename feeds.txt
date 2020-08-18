@@ -1,4 +1,3 @@
-http://www.libertypages.com/clarktech/?feed=rss2
 http://feeds.feedburner.com/CommonplaceCartography
 http://kk.org/cooltools/feed
 http://danstan.com/blog/imHotep/files/page0.xml
