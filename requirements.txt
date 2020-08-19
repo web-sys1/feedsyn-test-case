@@ -1,1 +1,1 @@
-NFSyndication
+NFSyndication==0.2.14
