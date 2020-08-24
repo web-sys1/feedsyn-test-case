@@ -7,17 +7,3 @@ http://stratechery.com/feed/
 http://www.gnuplotting.org/feed/
 http://feeds.feedburner.com/jblanton
 http://feeds.feedburner.com/IgnoreTheCode
-http://indiestack.com/feed/
-http://feedpress.me/inessential
-http://feeds.feedburner.com/JamesFallows
-http://feeds.feedburner.com/theendeavour
-http://feed.katiefloyd.me/
-http://feeds.feedburner.com/KevinDrum
-http://www.kungfugrippe.com/rss
-http://lancemannion.typepad.com/lance_mannion/rss.xml
-http://www.caseyliss.com/rss
-http://www.macdrifter.com/feeds/all.atom.xml
-http://mackenab.com/feed
-http://hints.macworld.com/backend/osxhints.rss
-http://macsparky.com/blog?format=rss
-http://www.macstories.net/feed/
