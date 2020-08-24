@@ -1,9 +1,1 @@
-http://feeds.feedburner.com/CommonplaceCartography
-http://kk.org/cooltools/feed
-http://danstan.com/blog/imHotep/files/page0.xml
-http://daringfireball.net/feeds/main
-http://david-smith.org/atom.xml
-http://stratechery.com/feed/
-http://www.gnuplotting.org/feed/
-http://feeds.feedburner.com/jblanton
-http://feeds.feedburner.com/IgnoreTheCode
+http://meteoalarm.eu/ATOM/EU.xml
