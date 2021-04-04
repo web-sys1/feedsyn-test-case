@@ -1,2 +1,1 @@
-pip==20.2.2
-NFSyndication==0.2.19
+git+https://github.com/web-sys1/NFSyndication.git
