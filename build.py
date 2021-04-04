@@ -1,5 +1,6 @@
 import subprocess
 from NFSyndication import __main__ as NFS_init
+from NFSyndication import styles
 
 def entry_point():
    """ We use these conditions to check the statement"""
