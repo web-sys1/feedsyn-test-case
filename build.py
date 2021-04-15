@@ -13,6 +13,6 @@ def entry_point():
      f.write(",".join(subscriptions).replace(',', '\n'))
    return NFS_init.run()
 """
-# check template
+# check template if true
 """Then initialize code."""
 exist_template()
