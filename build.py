@@ -11,7 +11,6 @@ def entry_point():
      'http://feedpress.me/inessential',
      'http://feeds.feedburner.com/JamesFallows',
      'http://feeds.feedburner.com/theendeavour',
-     'http://feed.katiefloyd.me/',
      'http://feeds.feedburner.com/KevinDrum',
      'http://www.kungfugrippe.com/rss',
      'http://lancemannion.typepad.com/lance_mannion/rss.xml',
