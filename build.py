@@ -4,7 +4,7 @@ from NFSyndication import styles
 
 """
 def entry_point():
-   """ We use these conditions to check the statement"""
+  #We use these conditions to check the statement
    subscriptions = [
      'http://feeds.feedburner.com/jblanton',
      'http://feeds.feedburner.com/IgnoreTheCode',
@@ -13,6 +13,6 @@ def entry_point():
      f.write(",".join(subscriptions).replace(',', '\n'))
    return NFS_init.run()
 """
-
+# check template
 """Then initialize code."""
 exist_template()
