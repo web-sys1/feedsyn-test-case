@@ -7,7 +7,10 @@ def entry_point():
    """ We use these conditions to check the statement"""
    subscriptions = [
      'http://feeds.feedburner.com/jblanton',
-     'http://feeds.feedburner.com/IgnoreTheCode'
+     'http://feeds.feedburner.com/IgnoreTheCode',
+     'http://blog.ashleynh.me/feed',
+     'https://www.betalogue.com/feed/',
+     'https://bitsplitting.org/feed/',
      ]
    with open(f'feeds.txt', 'w', encoding='utf8') as f:
      f.write(",".join(subscriptions).replace(',', '\n'))
