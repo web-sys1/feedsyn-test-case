@@ -1,2 +1,2 @@
-# test-case
-test case
+# feedsyn-test-case
+for parsing feeds.
