@@ -1,3 +1,4 @@
+# build.py
 import subprocess
 from NFSyndication import __main__ as NFS_init
 from NFSyndication import styles
