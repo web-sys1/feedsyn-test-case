@@ -253,6 +253,168 @@ footer a {
   
   <li>
     <div class="article_title">
+      <h3 class="fullpost_title"><a href="https://www.macstories.net/linked/craig-federighi-provides-deeper-insight-into-icloud-private-relay/">Craig Federighi Provides Deeper Insight Into iCloud Private Relay</a></h3>
+    </div>
+    <div class="article_meta"><p>
+      On 08 June 2021 at 07:08&thinsp;pm
+      • MacStories
+      
+        • by Alex Guyot
+      
+      
+    </p></div>
+    <div class="media-wrapper"><img alt="" src="https://cdn.macstories.net/privacy-1623178483004.png" /><p class="image-caption"></p></div>
+<p id="p2">Fast Company&rsquo;s Michael Grothaus <a href="https://www.fastcompany.com/90643627/apple-privacy-wwdc-private-relay-vpn-icloud-plus-macos-monterey" rel="noopener noreferrer">interviewed</a> Craig Federighi this week regarding the <a href="https://www.macstories.net/news/an-overview-of-the-new-privacy-controls-coming-to-apples-oses/" rel="noopener noreferrer">suite of new privacy features</a> which Apple unveiled at WWDC. The article includes some notable technical details on how iCloud Private Relay works under the hood. One of the most interesting &mdash; and somewhat unfortunate &mdash; revelations is that iCloud Private Relay will only work from Safari. Users of other browsers are out of luck here.</p>
+<aside class="aside aligncenter aside-narrow" id="aside3"><h3 class="pre-title" id="supported-by">Supported By</h3>
+<h2 id="raycast">Raycast</h2>
+
+<p></p><center><img alt="" src="https://cdn.macstories.net/appicon120_2-1622650311739.png" /></center>
+<p><strong><a href="https://raycast.com/?utm_source=macstories&amp;utm_campaign=wwdc_2021" rel="noopener noreferrer noopener noreferrer">Raycast</a></strong>: The Ultimate Productivity Tool.</p>
+</aside><p id="p4">The reason for this restriction has to do with Apple&rsquo;s commitment to unassailable privacy, which happens by ensuring that no party can ever access <em>both</em> your IP address and your destination URL. From what I can gauge, this is actually a three-step process which looks something like this:</p>
+<ul id="ul5"><li>From Safari, you navigate to a particular URL. Safari encrypts this destination URL <em>locally</em> and then forwards your request to Apple&rsquo;s iCloud Private Relay servers.</li>
+<li>Apple&rsquo;s servers anonymize your IP address so that it can&rsquo;t be traced back to you, then forward the request to a trusted third-party&rsquo;s servers.</li>
+<li>The third-party decrypts the destination URL, then forwards the final request (decrypted URL plus anonymized IP address) to the destination.</li>
+</ul><p id="p6"><!--more--></p>
+<p id="p7">These steps result in a more private communication chain because no party ever has all of your information at once. Apple&rsquo;s servers don&rsquo;t have the destination URL (because it is encrypted when they handle it), and the third-party doesn&rsquo;t have your actual IP address. Safari is required in the exchange because it needs to encrypt the URL locally before sending the request, something that other browsers aren&rsquo;t designed to do (perhaps in the future Apple would work with them to set this up, but that seems doubtful to me).</p>
+<p id="p8">Regarding the third parties involved here, Fast Company got some vague details:</p>
+<blockquote id="blockquote9"><p>
+  Apple would not name these trusted partners, but says the company is working with some of the largest content providers out there. Before getting to this relay station, however, your IP address is anonymized and randomized, so the relay partner can&rsquo;t identify you or your device.
+</p></blockquote>
+<p id="p10">Federighi has thoughts on why this exchange is valuable to users:</p>
+<blockquote id="blockquote11"><p>
+  Federighi notes most internet users aren&rsquo;t in a position to gauge the trustworthiness of any particular VPN. &ldquo;We wanted to take that [trust evaluation] completely out of the equation by having a dual-hop architecture,&rdquo; he says. &ldquo;We hope users believe in Apple as a trustworthy intermediary, but we didn&rsquo;t even want you to have to trust us [because] we don&rsquo;t have this ability to simultaneously source your IP and the destination where you&rsquo;re going to&ndash;and that&rsquo;s unlike VPNs. And so we wanted to provide many of the benefits that people are seeking when in the past they&rsquo;ve decided to use a VPN, but not force that difficult and conceivably perilous privacy trade-off in terms of trusting in a single intermediary.&rdquo;
+</p></blockquote>
+<p id="p12">Beyond the Safari-only restriction, Apple&rsquo;s Private Relay also won&rsquo;t allow users to manually change their source location. This is a common feature from other VPN providers which allows users to get around the geo-restrictions of streaming services and other websites. In fact, while iCloud Private Relay obscures your exact IP address, it will always maintain your relative regional location so that you can still receive localized content.</p>
+<hr id="hr13" /><p id="p14"><em>You can follow all of our WWDC coverage through our <a href="https://www.macstories.net/tag/wwdc-2021/" rel="noopener noreferrer">WWDC 2021 hub</a>, or subscribe to the dedicated <a href="https://www.macstories.net/tag/wwdc-2021/feed/" rel="noopener noreferrer">WWDC 2021 RSS feed</a>.</em></p>
+<p>→ Source: <a href="https://www.fastcompany.com/90643627/apple-privacy-wwdc-private-relay-vpn-icloud-plus-macos-monterey" target="_blank">fastcompany.com</a></p>
+
+    
+    <hr class="between_posts"/>
+  </li>
+  
+  <li>
+    <div class="article_title">
+      <h3 class="fullpost_title"><a href="https://www.macstories.net/news/appstories-episode-222-wwdc-2021-keynote-overview-and-reactions/">AppStories, Episode 222 – WWDC 2021: Keynote Overview and Reactions</a></h3>
+    </div>
+    <div class="article_meta"><p>
+      On 08 June 2021 at 06:52&thinsp;pm
+      • MacStories
+      
+        • by John Voorhees
+      
+      
+    </p></div>
+    <p id="p1">In today&rsquo;s <a href="https://appstories.net/episodes/222/" rel="noopener noreferrer">first special WWDC 2021 episode</a>, we cover the highlights of Apple&rsquo;s keynote, including iOS and iPadOS 15, macOS Monterey, and watchOS 8.</p>
+<p id="p2"><em>Sponsored by:</em></p>
+<ul id="ul3"><li><a href="https://raycast.com/appstories" rel="noopener noreferrer">Raycast</a> &ndash; Goodbye Spotlight. Hello Raycast.</li>
+<li><a href="https://www.backblaze.com/landing/podcast-macstories.html" rel="noopener noreferrer">Backblaze</a> &ndash; Get peace of mind knowing your files are backed up securely in the cloud. Start a free 15-day trial with Backblaze today</li>
+<li><a href="http://pingdom.com/signup" rel="noopener noreferrer">Pingdom</a> &ndash; Start monitoring your website performance and availability today, and get instant alerts when an outage occurs or a site transaction fails. Use offer code APPSTORIES to get 30% off. Offer expires on January 31, 2022, and can be used only once.</li>
+</ul><div class="media-wrapper"></div>
+<p id="p5">    </p><div class="media-wrapper subscribe-podcast-cta" id="div6">
+        <div class="subscribe-buttons-row"><a class="button button-subscribe" href="https://itunes.apple.com/us/podcast/appstories/id1227872143?mt=2&amp;at=10l6nh&amp;ct=ms_button" rel="noopener noreferrer"><img alt="" src="https://31468fb5fb2bdd537aee-cb22f1c32609fa6d332a03da76e227e5.ssl.cf1.rackcdn.com/button-itunes-2x1495584446433.png" /></a><a class="button button-subscribe" href="https://overcast.fm/itunes1227872143/appstories" rel="noopener noreferrer"><img alt="" src="https://31468fb5fb2bdd537aee-cb22f1c32609fa6d332a03da76e227e5.ssl.cf1.rackcdn.com/button-overcast-2x1495584446439.png" /></a></div>
+        <div class="subscribe-buttons-row"><a class="button button-subscribe" href="http://pca.st/appstories" rel="noopener noreferrer"><img alt="" src="https://31468fb5fb2bdd537aee-cb22f1c32609fa6d332a03da76e227e5.ssl.cf1.rackcdn.com/button-pocket-casts-2x1495584446442.png" /></a><a class="button button-subscribe" href="https://appstories.net/episodes/feed/" rel="noopener noreferrer"><img alt="" src="https://31468fb5fb2bdd537aee-cb22f1c32609fa6d332a03da76e227e5.ssl.cf1.rackcdn.com/button-rss-2x1495584446444.png" /></a></div>
+    </div>
+<p>→ Source: <a href="https://appstories.net/episodes/222/" target="_blank">appstories.net</a></p>
+
+    
+    <hr class="between_posts"/>
+  </li>
+  
+  <li>
+    <div class="article_title">
+      <h3 class="fullpost_title"><a href="https://www.macstories.net/news/an-overview-of-the-new-privacy-controls-coming-to-apples-oses/">An Overview of the New Privacy Controls Coming to Apple’s OSes</a></h3>
+    </div>
+    <div class="article_meta"><p>
+      On 08 June 2021 at 04:22&thinsp;pm
+      • MacStories
+      
+        • by John Voorhees
+      
+      
+    </p></div>
+    <div class="media-wrapper"><img alt="" src="https://cdn.macstories.net/apple_iphone12pro-springboard-translate-siri-ipadpro-siri-springboard-response-billie-eillish_060721-1623166981622.jpg" /><p class="image-caption"></p></div>
+<p id="p2">Privacy has become a central theme of Apple&rsquo;s OS updates in recent years, and this WWDC&rsquo;s announcements were no different. During the opening keynote yesterday, the company introduced new privacy features across its OSes and system apps designed to put users in control of their data and prevent unwanted tracking. As Craig Federighi Apple&rsquo;s senior vice president of Software Engineering explained in <a href="https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/" rel="noopener noreferrer">an Apple press release</a>:</p>
+<blockquote id="blockquote3"><p>
+  Privacy has been central to our work at Apple from the very beginning. Every year, we push ourselves to develop new technology to help users take more control of their data and make informed decisions about whom they share it with. This year&rsquo;s updates include innovative features that give users deeper insights and more granular control than ever before.
+</p></blockquote>
+<aside class="aside aligncenter aside-narrow" id="aside4"><h3 class="pre-title" id="supported-by">Supported By</h3>
+<h2 id="raycast">Raycast</h2>
+
+<p></p><center><img alt="" src="https://cdn.macstories.net/appicon120_2-1622650311739.png" /></center>
+<p><strong><a href="https://raycast.com/?utm_source=macstories&amp;utm_campaign=wwdc_2021" rel="noopener noreferrer noopener noreferrer">Raycast</a></strong>: The Ultimate Productivity Tool.</p>
+</aside><p id="p5">One of Apple&rsquo;s focuses this year is on email. Hide My Email, which is part of iCloud+, lets users create random email addresses that forward to their main address, allowing them to avoid giving out their primary email address to third parties that may sell it or use it to send unsolicited messages. <a href="https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/" rel="noopener noreferrer">According to Apple</a>, iCloud+ subscriptions with the new features the company announced will cost the same as they do now for the amount of storage offered with <a href="https://support.apple.com/en-us/HT201238" rel="noopener noreferrer">a current iCloud subscription</a>. Another new mail feature is, Mail Privacy Protection, which is built into Apple&rsquo;s Mail app, and prevents invisible pixel trackers that are used to tell if someone has opened a message and gather other information.</p>
+<p id="p6"><!--more--></p>
+<div class="media-wrapper"><img alt="" src="https://cdn.macstories.net/untitled-1623166686034.jpg" /><p class="image-caption"></p></div>
+<p id="p8">Apple will accomplish this in its OS updates by routing data through multiple proxy servers and downloading message data in the background, preventing location information from being revealed and making it impossible to know if someone has interacted with a message. As with many privacy features, it&rsquo;s a change that will not be welcomed by everyone:</p>
+<div class="media-wrapper" id="div9">
+<blockquote class="twitter-tweet">
+<p dir="ltr" lang="en">How Apple&rsquo;s mail changes work - effectively it will report 100% open rates. A huge pain for a lot of business that aren&rsquo;t violating anyone&rsquo;s privacy. <a href="https://t.co/165Yu9mAeF" rel="noopener noreferrer">pic.twitter.com/165Yu9mAeF</a></p>
+<p>&mdash; Benedict Evans (@benedictevans) <a href="https://twitter.com/benedictevans/status/1402193820423446528?ref_src=twsrc%5Etfw" rel="noopener noreferrer">June 8, 2021</a></p></blockquote>
+<p></p></div>
+<p id="p10">Apple&rsquo;s OSes will also begin preventing third parties from discovering your IP address when you use Safari, which can be used to determine your approximate location and track you across websites.</p>
+<div class="media-wrapper"><img alt="" src="https://cdn.macstories.net/untitled-1623166856589.jpg" /><p class="image-caption"></p></div>
+<p id="p12">The Settings app on iOS and iPadOS devices will gain an App Privacy Report section too. The new feature will report to users when and how often apps are using their location, photos, camera, microphone, and contacts during the past seven days. The report also lists the domains to which an app reports data it collects. How users act on the information provided in the App Privacy Report is up to them.</p>
+<p id="p13">Siri will be adding on-device speech detection too. The change eliminates potentially unwanted audio recordings from being shared with Apple. The company&rsquo;s voice assistant will also gain the ability to process more requests completely on-device, limiting the transfer of information over the Internet and, in the process, speeding up the activation of requests to do things like play music, change settings, set timers and alarms, and open apps.</p>
+<div class="media-wrapper"><img alt="" src="https://cdn.macstories.net/untitled-1623166955859.jpg" /><p class="image-caption"></p></div>
+<p id="p15">It&rsquo;s been quite a while since iCloud was updated, but with this fall&rsquo;s OS updates, Apple is adding new privacy features under the umbrella of iCloud+. I&rsquo;ve already mentioned the Hide My Email feature above, but there&rsquo;s more. Private Relay is a feature that, similar to a VPN, routes Internet traffic through multiple proxies to obscure its source, making it impossible for sites to determine your location. The data transmitted from your device over the Internet is also encrypted for added privacy. <a href="https://www.apple.com/newsroom/2021/06/apple-advances-its-privacy-leadership-with-ios-15-ipados-15-macos-monterey-and-watchos-8/" rel="noopener noreferrer">As Apple explains</a>:</p>
+<blockquote id="blockquote16"><p>
+  All the user&rsquo;s requests are then sent through two separate internet relays. The first assigns the user an anonymous IP address that maps to their region but not their actual location. The second decrypts the web address they want to visit and forwards them to their destination. This separation of information protects the user&rsquo;s privacy because no single entity can identify both who a user is and which sites they visit.
+</p></blockquote>
+<p id="p17">iCloud+ eliminates the limit on the number of video cameras supported by HomeKit&rsquo;s Secure Video too.</p>
+<p id="p18">Apple will also allow third-party developers to give users the ability to share the location just once, provide more granular access to users&rsquo; photo libraries, and let users paste content from other apps securely, so they don&rsquo;t have access to the clipboard until the user actively pastes the content into an app.</p>
+<hr id="hr19" /><p id="p20"><em>You can follow all of our WWDC coverage through our <a href="https://www.macstories.net/tag/wwdc-2021/" rel="noopener noreferrer">WWDC 2021 hub</a>, or subscribe to the dedicated <a href="https://www.macstories.net/tag/wwdc-2021/feed/" rel="noopener noreferrer">WWDC 2021 RSS feed</a>.</em></p>
+<hr /><h3>Support MacStories Directly</h3><p><p>Club MacStories offers exclusive access to <strong>extra MacStories content</strong>, delivered every week;  it&rsquo;s also a way to support us directly.</p>
+<p>Club MacStories will help you discover the best apps for your devices and get the most out of your iPhone, iPad, and Mac. Plus, it&rsquo;s made in Italy.</p>
+</p><a href="https://club.macstories.net/?utm_source=ms&#038;utm_medium=rss">Join Now</a>
+
+    
+    <hr class="between_posts"/>
+  </li>
+  
+  <li>
+    <div class="article_title">
+      <h3 class="fullpost_title"><a href="https://www.macstories.net/news/apple-begins-streaming-spatial-audio-and-lossless-tracks-on-apple-music/">Apple Begins Streaming Spatial Audio and Lossless Tracks on Apple Music</a></h3>
+    </div>
+    <div class="article_meta"><p>
+      On 08 June 2021 at 02:46&thinsp;pm
+      • MacStories
+      
+        • by John Voorhees
+      
+      
+    </p></div>
+    <div class="media-wrapper"><img alt="" src="https://cdn.macstories.net/apple_music-iphone12pro-spacial-nowplaying-airpods-dolbyatmos-2up_060721-1623163107108.jpg" /><p class="image-caption"></p></div>
+<p id="p2">Yesterday, not long after Apple&rsquo;s opening WWDC keynote, the company activated Spatial Audio and lossless playback for Apple Music. The company followed up with <a href="https://www.apple.com/newsroom/2021/06/apple-musics-zane-lowe-explains-how-spatial-audio-will-transform-music/" rel="noopener noreferrer">a press release</a> in which Zane Lowe, Apple Music&rsquo;s co-head of Artist Relations and radio host, explains the new feature and how he feels Spatial Audio will affect music.</p>
+<aside class="aside aligncenter aside-narrow" id="aside3"><h3 class="pre-title" id="supported-by">Supported By</h3>
+<h2 id="raycast">Raycast</h2>
+
+<p></p><center><img alt="" src="https://cdn.macstories.net/appicon120_2-1622650311739.png" /></center>
+<p><strong><a href="https://raycast.com/?utm_source=macstories&amp;utm_campaign=wwdc_2021" rel="noopener noreferrer noopener noreferrer">Raycast</a></strong>: The Ultimate Productivity Tool.</p>
+</aside><p id="p4">First announced last month, spatial audio is a new audio feature that will initially be available on a couple of thousands of Apple Music tracks, providing a surround sound experience for music fans. The technology is based on <a href="https://www.dolby.com/music/" rel="noopener noreferrer">Dolby Atmos</a>, which is also used by Amazon Music and Tidal.</p>
+<p id="p5"><!--more--></p>
+<p id="p6"><a href="https://www.macstories.net/news/apple-announces-spatial-audio-and-lossless-playback-for-apple-music-subscribers-coming-in-june/" rel="noopener noreferrer">As we wrote last month</a>, when the feature was revealed:</p>
+<blockquote id="blockquote7"><p>
+  Spatial Audio will be the default playback option for AirPods and Beats headphones with an H1 or W1 chip, including AirPods, AirPods Pro, AirPods Max, BeatsX, Beats Solo3 Wireless, Beats Studio3, Powerbeats3 Wireless, Beats Flex, Powerbeats Pro, and Beats Solo Pro. The feature will be available with other headphones, too, by going to Settings &rarr; Music &rarr; Audio and setting Dolby Atmos to &lsquo;Always On.&rsquo; The playback feature is also supported by the latest models of iPhones, iPads, Macs, and Apple TVs.
+</p></blockquote>
+<p id="p8">Although the availability of Spatial Audio is currently limited to a limited portion of Apple Music&rsquo;s catalog, including J Balvin, Gustavo Dudamel, Ariana Grande, Maroon 5, Kacey Musgraves, and The Weeknd, the company says it will be adding new tracks continuously as they become available from artists.</p>
+<p id="p9"><a href="https://www.apple.com/newsroom/2021/06/apple-musics-zane-lowe-explains-how-spatial-audio-will-transform-music/" rel="noopener noreferrer">In today&rsquo;s press release</a>, Lowe explains that Spatial Audio unlocks a new avenue of creativity for artists and new experiences for music fans:</p>
+<blockquote id="blockquote10"><p>
+  I&rsquo;m fascinated to know how I might be emotionally moved by my favorite songs in a different way with Spatial Audio. Because it&rsquo;s all going through my ears and triggering something, right? That&rsquo;s what dawned on me when I was listening to these songs in Spatial: I was listening to these songs that I knew really well, but I was feeling something different. So, it&rsquo;s not even just about the way it&rsquo;s going to end up sounding, it&rsquo;s very much how songs are going to feel.
+</p></blockquote>
+<p id="p11">Lowe also mentioned that Spatial Audio tools will be built into Logic Pro later this year. If you&rsquo;re curious about Spatial Audio, Apple has created <a href="https://music.apple.com/us/playlist/made-for-spatial-audio/pl.154af9931b214278a64274c410046e69" rel="noopener noreferrer">a special playlist</a> showcasing the feature.</p>
+<p id="p12">Alongside Spatial Audio, Apple has made lossless streaming available in multiple lossless streaming formats, <a href="https://www.macstories.net/news/apple-support-document-clarifies-lossless-streaming-details/" rel="noopener noreferrer">which led to initial confusion</a> about which devices and headphones supported the feature. For details on what you&rsquo;ll need for lossless playback, be sure to check out <a href="https://support.apple.com/en-us/HT212183" rel="noopener noreferrer">Apple&rsquo;s support page</a>.</p>
+<p id="p13">I&rsquo;ve had a chance to briefly try Spatial Audio, and it&rsquo;s excellent. The feature creates a new dimensionality to music that isn&rsquo;t captured by regular stereo recordings. The tracks available at launch are limited, but I expect that as music fans try it, demand will increase, and Spatial Audio will become the new normal for music streaming.</p>
+<hr id="hr14" /><p id="p15"><em>You can follow all of our WWDC coverage through our <a href="https://www.macstories.net/tag/wwdc-2021/" rel="noopener noreferrer">WWDC 2021 hub</a>, or subscribe to the dedicated <a href="https://www.macstories.net/tag/wwdc-2021/feed/" rel="noopener noreferrer">WWDC 2021 RSS feed</a>.</em></p>
+<hr /><h3>Support MacStories Directly</h3><p><p>Club MacStories offers exclusive access to <strong>extra MacStories content</strong>, delivered every week;  it&rsquo;s also a way to support us directly.</p>
+<p>Club MacStories will help you discover the best apps for your devices and get the most out of your iPhone, iPad, and Mac. Plus, it&rsquo;s made in Italy.</p>
+</p><a href="https://club.macstories.net/?utm_source=ms&#038;utm_medium=rss">Join Now</a>
+
+    
+    <hr class="between_posts"/>
+  </li>
+  
+  <li>
+    <div class="article_title">
       <h3 class="fullpost_title"><a href="https://www.macstories.net/news/adobe-brings-more-creative-cloud-apps-to-the-m1-macs-and-announces-new-features-across-its-apps/">Adobe Brings More Creative Cloud Apps to the M1 Macs and Announces New Features Across Its Apps</a></h3>
     </div>
     <div class="article_meta"><p>
@@ -581,7 +743,7 @@ footer a {
       
       
     </p></div>
-    <div class="media-wrapper"><img alt="" src="https://cdn.macstories.net/hero-dark-1615551081706-1622657072930.png" /><p class="image-caption"></p></div>
+    <div class="media-wrapper"><img alt="" src="https://cdn.macstories.net/raycast-ad-hero-1623162285619.png" /><p class="image-caption"></p></div>
 <p id="p2"><a href="https://raycast.com/?utm_source=macstories&amp;utm_campaign=wwdc_2021" rel="noopener noreferrer">Raycast</a>&nbsp;is a native Mac super tool that eclipses and extends Spotlight&rsquo;s functionality. With a quick keyboard shortcut, Raycast launches apps and so much more:</p>
 <ul id="ul3"><li>Search for and access your files</li>
 <li>Use third-party apps and services like Google Workspace, GitHub, Jira, Asana, Linear, and more</li>
@@ -1436,153 +1598,6 @@ I tagged along with Stephen to see his iMac G3s in an exhibit at The Henry Ford 
   provide an easy way for developers to explore relevant sessions, labs, and special activities for a given topic. Conference attendees can customize their WWDC experience and check out content organized around specific areas like SwiftUI, Developer Tools, Accessibility &amp; Inclusion, and more &mdash; exclusively within the Apple Developer app.
 </p></blockquote>
 <p id="p6">Finally, the <a href="https://developer.apple.com/wwdc21/swift-student-challenge/" rel="noopener noreferrer">Swift Student Challenge</a> winners will be announced by Apple on June first, six days before WWDC begins.</p>
-<hr /><h3>Support MacStories Directly</h3><p><p>Club MacStories offers exclusive access to <strong>extra MacStories content</strong>, delivered every week;  it&rsquo;s also a way to support us directly.</p>
-<p>Club MacStories will help you discover the best apps for your devices and get the most out of your iPhone, iPad, and Mac. Plus, it&rsquo;s made in Italy.</p>
-</p><a href="https://club.macstories.net/?utm_source=ms&#038;utm_medium=rss">Join Now</a>
-
-    
-    <hr class="between_posts"/>
-  </li>
-  
-  <li>
-    <div class="article_title">
-      <h3 class="fullpost_title"><a href="https://www.macstories.net/sponsored/habitminder-change-your-habits-change-your-life-sponsor/">HabitMinder: Change Your Habits, Change Your Life [Sponsor]</a></h3>
-    </div>
-    <div class="article_meta"><p>
-      On 24 May 2021 at 10:45&thinsp;am
-      • MacStories
-      
-        • by MacStories Team
-      
-      
-    </p></div>
-    <div class="media-wrapper"><img alt="" src="https://cdn.macstories.net/habitminder-hero3-1621784837469.png" /><p class="image-caption"></p></div>
-<p id="p2">It&rsquo;s difficult to form a good habit, but if you do, it can change your life.&nbsp;Make it easy on yourself with <a href="https://itunes.apple.com/us/app/habitminder/id1253577148" rel="noopener noreferrer">HabitMinder</a> the best way to get started and stick with new habits.</p>
-<p id="p3">HabitMinder starts with its Today view, a comprehensive overview of all the habits you&rsquo;re tracking, and access quick actions to log information with ease. With a tap of a habit, you can go straight to its dedicated Session screen to get more information on your progress. You can even personalize your habit by picking from dozens of colors and hundreds of icons. Also, to stay on track, set reminders for yourself, so you never forget about your new goal. There&rsquo;s a dedicated statistics screen to track your progress too.</p>
-<p id="p4">HabitMinder is built for the iPhone, iPad, and Apple Watch, which makes it easy to log and track your goals no matter which device you have with you. The app also works with Apple&rsquo;s Health app, keeping your data private and secure. Everything syncs over iCloud and there&rsquo;s a terrific pure black mode that looks great on OLED iPhone screens. There are even a bunch of pre-defined habits available to help you get started.</p>
-<p id="p5">Habits are hard to form but whether it&rsquo;s hydration, exercise, eating right, or something else, good habits can lead to meaningful change. So whatever your goal,&nbsp;<a href="https://itunes.apple.com/us/app/habitminder/id1253577148" rel="noopener noreferrer">download HabitMinder today to get started</a>.</p>
-<p id="p6"><em>Our thanks got HabitMinder by Funn Media for sponsoring MacStories this week.</em></p>
-<hr /><h3>Support MacStories Directly</h3><p><p>Club MacStories offers exclusive access to <strong>extra MacStories content</strong>, delivered every week;  it&rsquo;s also a way to support us directly.</p>
-<p>Club MacStories will help you discover the best apps for your devices and get the most out of your iPhone, iPad, and Mac. Plus, it&rsquo;s made in Italy.</p>
-</p><a href="https://club.macstories.net/?utm_source=ms&#038;utm_medium=rss">Join Now</a>
-
-    
-    <hr class="between_posts"/>
-  </li>
-  
-  <li>
-    <div class="article_title">
-      <h3 class="fullpost_title"><a href="https://www.macstories.net/news/apple-support-document-clarifies-lossless-streaming-details/">Apple Support Document Clarifies Lossless Streaming Details</a></h3>
-    </div>
-    <div class="article_meta"><p>
-      On 22 May 2021 at 05:43&thinsp;pm
-      • MacStories
-      
-        • by John Voorhees
-      
-      
-    </p></div>
-    <div class="media-wrapper"><img alt="" src="https://cdn.macstories.net/cleanshot-2021-05-22-at-12-27-33-2x-1621704879420.jpg" /><p class="image-caption"></p></div>
-<p id="p2">In June, Apple Music will offer the option of streaming in <a href="https://www.macstories.net/news/apple-announces-spatial-audio-and-lossless-playback-for-apple-music-subscribers-coming-in-june/" rel="noopener noreferrer">CD-quality and high-resolution lossless formats</a>. There was <a href="https://www.macstories.net/news/airpods-and-homepods-will-not-support-apple-musics-new-lossless-audio/" rel="noopener noreferrer">initial confusion</a> about which Apple devices will support lossless streaming, but the company has clarified things with <a href="https://support.apple.com/en-us/HT212183" rel="noopener noreferrer">a support document</a>.</p>
-<p id="p3">The new support document confirms what was announced earlier this week. Lossless is supported by iPhones, iPads, and Macs using their built-in speakers and wired headphones, receivers, and powered speakers. Lossless audio will stream to AirPods, AirPods Max, and Beats wireless headphones, but it won&rsquo;t be lossless because they rely on Bluetooth, which is inherently lossy.</p>
-<p id="p4">Regarding the Lightning to 3.5&nbsp;mm cable for the AirPods Max, <a href="https://support.apple.com/en-us/HT212183" rel="noopener noreferrer">Apple&rsquo;s support document says</a>:</p>
-<blockquote id="blockquote5"><p>
-  The&nbsp;<a href="https://www.apple.com/shop/product/MXK22AM/A/lightning-to-35-mm-audio-cable-12m-white" rel="noopener noreferrer">Lightning to 3.5&nbsp;mm Audio Cable</a>&nbsp;was designed to allow AirPods Max to connect to analog sources for listening to movies and music. AirPods Max can be connected to devices playing Lossless and Hi-Res Lossless recordings with exceptional audio quality. However, given the analog to digital conversion in the cable, the playback will not be completely lossless.
-</p></blockquote>
-<p id="p6">It&rsquo;s also worth noting that Apple&rsquo;s Lightning to 3.5mm adapter that can be used to connect wired headphones to devices only supports up to 24-bit/48&nbsp;kHz lossless audio. A digital-to-analog converter is necessary for 24-bit/192&nbsp;kHz playback.</p>
-<p id="p7">Apple says HomePods and HomePod minis will be updated and an unspecified date in the future to support lossless playback, but they don&rsquo;t currently support it.</p>
-<p id="p8">It wasn&rsquo;t clear initially which Apple TVs will support lossless streaming. Apple&rsquo;s support document suggests that it&rsquo;s only the Apple TV 4K, connected to a receiver via HDMI, leaving Apple TV HD owners out of luck. Moreover, the Apple TV 4K only supports lossless playback at 24-bit/48&nbsp;kHz. However, the wording of the support document leaves the possibility that a future update may make Hi-Res Lossless available.</p>
-<p id="p9">Finally, only Apple Music content supports lossless streaming. iTunes Store content and Apple Music&rsquo;s broadcast radio, Apple Music 1, other live radio content, and music videos will not stream losslessly.</p>
-<hr /><h3>Support MacStories Directly</h3><p><p>Club MacStories offers exclusive access to <strong>extra MacStories content</strong>, delivered every week;  it&rsquo;s also a way to support us directly.</p>
-<p>Club MacStories will help you discover the best apps for your devices and get the most out of your iPhone, iPad, and Mac. Plus, it&rsquo;s made in Italy.</p>
-</p><a href="https://club.macstories.net/?utm_source=ms&#038;utm_medium=rss">Join Now</a>
-
-    
-    <hr class="between_posts"/>
-  </li>
-  
-  <li>
-    <div class="article_title">
-      <h3 class="fullpost_title"><a href="https://www.macstories.net/news/macstories-unwind-federicos-ipad-pro-review-m1-imacs-spatial-audio-and-lossless-streaming-halide-and-pok-pok-playroom/">MacStories Unwind: Federico’s iPad Pro Review, M1 iMacs, Spatial Audio and Lossless Streaming, Halide, and Pok Pok Playroom</a></h3>
-    </div>
-    <div class="article_meta"><p>
-      On 21 May 2021 at 09:03&thinsp;pm
-      • MacStories
-      
-        • by John Voorhees
-      
-      
-    </p></div>
-    <div class="media-wrapper audio-player js-audio-player aligncenter" id="div1">
-<div class="audio-player">
-        <button class="button button-play-pause js-play-pause-button"><svg height="100%" version="1.1" viewBox="0 0 36 36" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M13.06,10.03 L16.82,12.33 16.82,23.50 13.06,25.79 M16.82,12.33 L25.95,17.91 25.95,17.91 16.82,23.50" fill="white"><animate attributeName="d" attributeType="XML" begin="indefinite" dur="0.1s" fill="freeze" from="M11,10 L17,10 17,26 11,26 M20,10 L26,10 26,26 20,26" keySplines=".4 0 1 1" repeatCount="1" to="M11,10 L18,13.74 18,22.28 11,26 M18,13.74 L26,18 26,18 18,22.28"></animate></path></svg></button>
-<div class="audio-timeline">
-            <input class="audio-slider js-timeline" max="1429" step="0.01" type="range" value="0" /><div class="audio-labels">
-                <span class="current js-current-time">0:00</span><br /><span class="total">23:49</span>
-            </div>
-<p>            <audio class="audio-element js-audio" preload="none"><source src="https://cdn.simplecast.com/audio/0de98bba-5e4d-4879-94dc-8c76a3a88322/episodes/be01ad87-5f50-4615-9cf2-489b4d791116/audio/faeb54d7-5a36-433e-b318-c21f2766ead3/default_tc.mp3" type="audio/mpeg" /></audio></p></div>
-</div>
-<div class="caption"></div>
-</div>
-<p id="p2">    </p><div class="media-wrapper subscribe-podcast-cta" id="div3">
-        <div class="subscribe-buttons-row"><a class="button button-subscribe" href="https://podcasts.apple.com/us/podcast/macstories-unwind/id1510451759" rel="noopener noreferrer"><img alt="" src="https://31468fb5fb2bdd537aee-cb22f1c32609fa6d332a03da76e227e5.ssl.cf1.rackcdn.com/button-itunes-2x1495584446433.png" /></a><a class="button button-subscribe" href="https://overcast.fm/itunes1510451759/macstories-unwind" rel="noopener noreferrer"><img alt="" src="https://31468fb5fb2bdd537aee-cb22f1c32609fa6d332a03da76e227e5.ssl.cf1.rackcdn.com/button-overcast-2x1495584446439.png" /></a></div>
-        <div class="subscribe-buttons-row"><a class="button button-subscribe" href="https://pca.st/unwind" rel="noopener noreferrer"><img alt="" src="https://31468fb5fb2bdd537aee-cb22f1c32609fa6d332a03da76e227e5.ssl.cf1.rackcdn.com/button-pocket-casts-2x1495584446442.png" /></a><a class="button button-subscribe" href="https://feeds.simplecast.com/TL_Rhe_x" rel="noopener noreferrer"><img alt="" src="https://31468fb5fb2bdd537aee-cb22f1c32609fa6d332a03da76e227e5.ssl.cf1.rackcdn.com/button-rss-2x1495584446444.png" /></a></div>
-    </div>
-<hr id="hr4" /><p id="p5"><em>Sponsored by: <a href="https://www.macbartender.com/Bartender4/" rel="noopener noreferrer">Bartender</a> &ndash; Take Control of Your Menu Bar</em></p>
-<p id="p6">This week, Federico and John recap the week&rsquo;s Apple announcements and news including the new M1 iPad Pro that Federico reviewed, the new M1 iMac, Spatial Audio and Lossless coming to Apple Music, new watch bands and accessibility features, plus reviews of Halide for iPad, Pok Pok Playroom, and more.</p>
-<h3 id="macstories"><a href="https://macstories.net" rel="noopener noreferrer">MacStories</a></h3>
-<ul id="ul7"><li><a href="https://www.macstories.net/stories/ipad-pro-2021-review/" rel="noopener noreferrer">iPad Pro 2021 Review: Future on Standby</a></li>
-<li><a href="https://www.macstories.net/linked/austin-mann-on-the-m1-ipad-pro-for-pro-photographers/" rel="noopener noreferrer">Austin Mann on the M1 iPad Pro for Pro Photographers</a></li>
-<li><a href="https://www.macstories.net/news/m1-imac-review-roundup/" rel="noopener noreferrer">M1 iMac Review Roundup</a></li>
-<li><a href="https://www.macstories.net/news/apple-announces-spatial-audio-and-lossless-playback-for-apple-music-subscribers-coming-in-june/" rel="noopener noreferrer">Apple Announces Spatial Audio and Lossless Playback for Apple Music Subscribers Coming in June</a></li>
-<li><a href="https://www.macstories.net/news/airpods-and-homepods-will-not-support-apple-musics-new-lossless-audio/" rel="noopener noreferrer">AirPods and HomePods Will Not Support Apple Music&rsquo;s New Lossless Audio</a></li>
-<li><a href="https://www.macstories.net/news/apple-releases-two-pride-watch-bands-and-a-new-pride-watch-face/" rel="noopener noreferrer">Apple Releases Two Pride Watch Bands and a New Pride Watch Face</a></li>
-<li><a href="https://www.macstories.net/linked/austin-mann-on-the-m1-ipad-pro-for-pro-photographers/" rel="noopener noreferrer">Austin Mann on the M1 iPad Pro for Pro Photographers</a></li>
-<li><a href="https://www.macstories.net/reviews/lux-delivers-an-ipad-version-of-halide-that-addresses-the-unique-challenges-of-ipad-photography/" rel="noopener noreferrer">Lux Delivers an iPad Version of Halide That Addresses the Unique Challenges of iPad Photography</a></li>
-<li><a href="https://www.macstories.net/reviews/pok-pok-playroom-a-delightful-digital-toybox-for-kids/" rel="noopener noreferrer">Pok Pok Playroom: A Delightful Digital Toybox for Kids</a></li>
-<li><a href="https://www.macstories.net/news/apple-introduces-affiliate-program-for-podcasts-subscriptions/" rel="noopener noreferrer">Apple Introduces Affiliate Program for Podcasts Subscriptions</a></li>
-<li><a href="https://www.macstories.net/news/apple-announces-signtime-and-many-other-accessibility-features-coming-to-its-products/" rel="noopener noreferrer">Apple Announces SignTime and Many Other Accessibility Features Coming to Its Products</a></li>
-</ul><h3 id="club-macstories"><a href="https://club.macstories.net" rel="noopener noreferrer">Club MacStories</a></h3>
-<ul id="ul8"><li>MacStories Weekly
-<ul><li>Wallpaper Collection</li>
-<li>A Mac window management tip</li>
-<li>Federico on using a DAC to listen to lossless music</li>
-</ul></li>
-</ul><h3 id="appstories"><a href="https://appstories.net" rel="noopener noreferrer">AppStories</a></h3>
-<ul id="ul9"><li><a href="https://www.macstories.net/news/appstories-episode-218-our-ios-15-wishes/" rel="noopener noreferrer">AppStories, Episode 218 &ndash; Our iOS 15 Wishes</a></li>
-<li><a href="https://appstories.net/episodes/219/" rel="noopener noreferrer">Federico&rsquo;s 2021 iPad Pro Review: Step Into the Capture Zone</a></li>
-</ul><h3 id="unwind">Unwind</h3>
-<ul id="ul10"><li>Federico&rsquo;s Half Pick:
-<ul><li><a href="https://music.apple.com/us/album/sour/1560735414" rel="noopener noreferrer">SOUR by Olivia Rodrigo</a></li>
-</ul></li>
-<li>John&rsquo;s Pick:
-<ul><li><a href="https://music.apple.com/us/album/delta-kream/1562742266" rel="noopener noreferrer">Delta Kream by The Black Keys</a></li>
-</ul></li>
-</ul>
-<hr /><h3>Support MacStories Directly</h3><p><p>Club MacStories offers exclusive access to <strong>extra MacStories content</strong>, delivered every week;  it&rsquo;s also a way to support us directly.</p>
-<p>Club MacStories will help you discover the best apps for your devices and get the most out of your iPhone, iPad, and Mac. Plus, it&rsquo;s made in Italy.</p>
-</p><a href="https://club.macstories.net/?utm_source=ms&#038;utm_medium=rss">Join Now</a>
-
-    
-    <hr class="between_posts"/>
-  </li>
-  
-  <li>
-    <div class="article_title">
-      <h3 class="fullpost_title"><a href="https://www.macstories.net/news/apple-introduces-affiliate-program-for-podcasts-subscriptions/">Apple Introduces Affiliate Program for Podcasts Subscriptions</a></h3>
-    </div>
-    <div class="article_meta"><p>
-      On 20 May 2021 at 07:45&thinsp;pm
-      • MacStories
-      
-        • by John Voorhees
-      
-      
-    </p></div>
-    <div class="media-wrapper"><img alt="" src="https://cdn.macstories.net/ivborw0kggoaaaansuheugaac50aaajwcayaaaakgq9xaaaacxbiwxmaaastaaaleweampwyaaam-1621537943564.png" /><p class="image-caption"></p></div>
-<p id="p2">Apple&rsquo;s Podcasts Subscriptions service is coming soon, and today, the company debuted an affiliate program to help spread the word about the shows that participate in it. <a href="https://www.macstories.net/news/apple-announces-apple-podcasts-subscriptions/" rel="noopener noreferrer">As we previously reported</a>, the subscription program will allow podcasters to offer paid versions of their shows. Podcasters can offer paid-only shows or enhanced versions of free shows that add a combination of bonus features, like extended, ad-free, and early-release episodes.</p>
-<p id="p3">Today&rsquo;s announcement <a href="https://podcasters.apple.com/support/979-affiliate-program-for-podcasts" rel="noopener noreferrer">adds Podcasts Subscriptions to Apple&rsquo;s existing affiliate programs</a> for iTunes Store content as well as Apple Music, TV+, New+, and Books subscriptions and content. If you <a href="https://apple.co/podcastpartners" rel="noopener noreferrer">apply to the program</a> and are accepted, you&rsquo;ll be given a token that identifies your affiliate account when you publish a link to a paid podcast. When someone subscribes to a show using your link, you&rsquo;ll earn a 50% commission on the first month&rsquo;s subscription fee for any subscriptions signed up within a 30-day window. For example, the new program would mean a $5 payout for a user who signed up for a $10/month subscription. The affiliate program is available to podcaster&rsquo;s offering shows for subscriptions, adding another way for them to earn money from their shows.</p>
-<p id="p4">With the exception of apps, which were <a href="https://www.macstories.net/news/apple-announces-apps-and-in-app-purchases-will-be-removed-from-its-affiliate-program-october-1st/" rel="noopener noreferrer">removed from Apple&rsquo;s affiliate program in 2018</a>, Apple now offers an affiliate program for all of the subscriptions and content it sells. The success of the App Store ultimately made that affiliate program unnecessary for Apple to continue. However, as a new service, it makes a lot of sense to introduce an affiliate program for Podcasts Subscriptions to help raise its profile among consumers.</p>
 <hr /><h3>Support MacStories Directly</h3><p><p>Club MacStories offers exclusive access to <strong>extra MacStories content</strong>, delivered every week;  it&rsquo;s also a way to support us directly.</p>
 <p>Club MacStories will help you discover the best apps for your devices and get the most out of your iPhone, iPad, and Mac. Plus, it&rsquo;s made in Italy.</p>
 </p><a href="https://club.macstories.net/?utm_source=ms&#038;utm_medium=rss">Join Now</a>
@@ -5173,7 +5188,7 @@ Nice to know you’ve got our backs, Microsoft.</p>
   </ul>
   <footer>
     <p>
-        Last updated on 08 June 2021 at 01:17&thinsp;pm.
+        Last updated on 08 June 2021 at 07:23&thinsp;pm.
         Made with Python app & Jinja2 (based on script by configuration of the project)
     </p>
   </footer>
